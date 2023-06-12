@@ -1,0 +1,42 @@
+class Visitante {
+  - nome: string
+  - documento: string
+  - telefone: string
+  + constructor(nome, documento, telefone)
+}
+
+class Quarto {
+  - tipo: int
+  - numero: int
+  - capacidade: int
+  + constructor(numero, capacidade, tipo)
+}
+
+class Estacionamento {
+  - vaga_codigo: int
+  - vagas_totais: int
+  - vagas_ocupadas: int
+  + constructor(vagas_totais, vagas_ocupadas, vaga_codigo)
+}
+
+class Agendamento {
+  - visitante: Visitante
+  - data: string
+  - horario: string
+  + construtor(visitante, data, horario)
+}
+
+class Servicos {
+  - nome: string
+  - preco: float
+  - disponibilidade: string
+  + constructor(nome, preco, disponibilidade)
+}
+
+
+Visitante "0..n" -- "1..n" Quarto
+Visitante "1..1" -- "1..n" Agendamento
+Visitante "0..n" -- "0..n" Servicos
+Quarto "1..n" -- "0..n" Agendamento
+Quarto "0..n" -- "0..n" Servicos
+Estacionamento "1..1" -- "0..n" Visitante
