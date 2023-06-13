@@ -1,4 +1,4 @@
 db.sqlite3
 visitanteapp/__pycache__/*
-/apps/categories/__pycache__/*
-/apps/categories/migrations/*
+/apps/servicos/__pycache__/*
+/apps/servicos/migrations/*
