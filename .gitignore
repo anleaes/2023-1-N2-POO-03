@@ -1,6 +1,11 @@
 db.sqlite3
 visitanteapp/__pycache__/*
+
 /apps/servicos/__pycache__/*
 /apps/servicos/migrations/*
 /apps/agendamento/__pycache__/*
 /apps/agendamento/migrations/*
+
+/apps/visitante/__pycache__/*
+/apps/visitante/migrations/*
+
