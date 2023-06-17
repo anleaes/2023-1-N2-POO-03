@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'agendamento.apps.AgendamentoConfig',
     'servicos.apps.ServicosConfig',
     'visitante.apps.VisitanteConfig'
-
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
