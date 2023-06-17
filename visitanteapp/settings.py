@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 
     'agendamento.apps.AgendamentoConfig',
     'servicos.apps.ServicosConfig',
-    'visitante.apps.VisitanteConfig'
+    'visitante.apps.VisitanteConfig',
 ]
 
 MIDDLEWARE = [
