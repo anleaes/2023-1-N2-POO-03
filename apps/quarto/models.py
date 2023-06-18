@@ -14,4 +14,4 @@ class Quarto(models.Model):
         ordering =['id']
 
     def __str__(self):
-        return self.tipo, self.numero, self.capacidade, self.visitante
+        return f"{self.tipo} - {self.numero} - {self.capacidade} - {self.visitante}"
