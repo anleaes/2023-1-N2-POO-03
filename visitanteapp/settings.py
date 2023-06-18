@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'servicos.apps.ServicosConfig',
     'visitante.apps.VisitanteConfig',
     'quarto.apps.QuartoConfig',
+    'estacionamento.apps.EstacionamentoConfig',
 ]
 
 MIDDLEWARE = [

@@ -11,4 +11,6 @@ visitanteapp/__pycache__/*
 
 /apps/quarto/__pycache__/*
 /apps/quarto/migrations/*
+/apps/estacionamento/__pycache__/*
+/apps/estacionamento/migrations/*
 
