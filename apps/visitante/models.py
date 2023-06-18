@@ -12,5 +12,5 @@ class Visitante(models.Model):
         ordering =['id']
 
     def __str__(self):
-        return self.nome, self.cpf, self.telefone
+        return f"{self.nome} - {self.cpf} - {self.telefone}"
 
