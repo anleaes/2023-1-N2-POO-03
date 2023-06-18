@@ -22,5 +22,6 @@ urlpatterns = [
     path('agendamento/', include('agendamento.urls', namespace='agendamento')),
     path('servicos/', include('servicos.urls', namespace='servicos')),
     path('visitante/', include('visitante.urls', namespace='visitante')),
+    path('quarto/', include('quarto.urls', namespace='quarto')),
 
 ]
