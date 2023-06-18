@@ -1,11 +1,12 @@
 from django.db import models
+from visitante.models import Visitante
 
 # Create your models here.
 class Quarto(models.Model):
-    
+    visitante = models.ForeignKey(Visitante, on_delete=models.CASCADE)
     tipo = models.TextField("Tipo", max_length=20, default="Não Especificado")
-    numero = models.TextField("Número", max_length=3, default="Não Especificado")
-    capacidade = models.TextField("Capacidade", max_length=2, default="Não Especificado")
+    numero = models.IntegerField("Número", default=0)
+    capacidade = models.IntegerField("Capacidade", default=0)
 
     class Meta:
         verbose_name = 'Quarto'

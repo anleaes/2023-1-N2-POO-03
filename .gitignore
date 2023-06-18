@@ -9,3 +9,6 @@ visitanteapp/__pycache__/*
 /apps/visitante/__pycache__/*
 /apps/visitante/migrations/*
 
+/apps/quarto/__pycache__/*
+/apps/quarto/migrations/*
+
