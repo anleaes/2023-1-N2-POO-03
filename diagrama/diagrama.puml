@@ -2,7 +2,7 @@ class Visitante {
   - nome: string
   - cpf: string
   - telefone: string
-  + constructor(nome, documento, telefone)
+  + constructor(nome, cpf, telefone)
 }
 
 class Quarto {
@@ -14,7 +14,6 @@ class Quarto {
 }
 
 class Estacionamento {
-  - visitante: Visitante
   - vaga_codigo: int
   - vagas_totais: int
   - vagas_ocupadas: int
@@ -26,7 +25,7 @@ class Agendamento {
   - data_entrada: date
   - data_saida: date
   - quarto: Quarto
-  + construtor(visitante, data, horario)
+  + construtor(visitante, data_entrada, data_saida, quarto)
 }
 
 class Servicos {
@@ -41,3 +40,4 @@ Visitante --* Quarto
 Visitante --* Agendamento
 Quarto --* Servicos
 Visitante --* Estacionamento
+Quarto --* Agendamento
